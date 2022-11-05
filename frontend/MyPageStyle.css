@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(37, 44, 70);
+    padding: 5px 15px;
+}
+.logo{
+    padding: 8px 12px;
+    font-size: 24px;
+    color: white;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.menu li{
+    padding: 8px 12px;
+    margin: 10px;
+}
+.menu li:hover{
+    background-color: rgb(29, 33, 47);
+    border-radius: 4px;
+}
+.icons{
+    font-size: 20px;
+    color: white;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+.icons li{
+    padding : 8px 12px;
+}

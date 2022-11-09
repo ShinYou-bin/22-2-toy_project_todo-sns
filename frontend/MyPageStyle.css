@@ -1,43 +1,298 @@
-body{
+html, body{
     margin: 0;
+    padding: 0;
     font-family: 'Gowun Dodum', sans-serif;
+    min-height: 100% !important;
+    height: 100%;
 }
-a{
+nav a{
     text-decoration: none;
-    color: white;
+    color: #c7b19b;
 }
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: rgb(37, 44, 70);
+    background-color: #f5eee6;
     padding: 5px 15px;
 }
 .logo{
+    justify-content: center;
+    text-align: center;
+    width: 20%;
     padding: 8px 12px;
-    font-size: 24px;
-    color: white;
+    font-size: 40px;
+    color: #c7b19b;
 }
 .menu{
-    display: flex;
+    display: flex; 
+    justify-content: space-around;
+    width: 70%;
     list-style: none;
-    padding-left: 0;
+    font-size: 30px;
 }
 .menu li{
     padding: 8px 12px;
     margin: 10px;
+    
 }
 .menu li:hover{
-    background-color: rgb(29, 33, 47);
+    background-color: #e1d6ca;
     border-radius: 4px;
 }
-.icons{
-    font-size: 20px;
-    color: white;
-    list-style: none;
-    display: flex;
-    padding-left: 0;
+a:hover{
+    text-decoration: none;
+    color: #a9947f;
 }
-.icons li{
-    padding : 8px 12px;
+
+aside{
+    display: flex;
+    padding: 30px;
+    width: 20%;
+    height: 100%;
+    float: right;
+    background: #e6a4b4;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.aside-box{
+    height: 100%;
+}
+.pic{
+    height: 100px;
+    width: 100px;
+    background: #FFFFFF;
+    margin: auto;
+}
+.name{
+    margin: auto;
+}
+.bar{
+    width: 150px;
+    height: 20px;
+    background: #2107e0;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #2107e0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    
+}
+
+/* ======== Calendar ======== */
+.my-calendar {
+    /* 아래 세줄 추가함 */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 5%;
+    height: 90%;
+    width: 90%;
+    text-align: center;
+    /* font-weight: 800; */
+    /* cursor: default; */
+    background: #dba86f;
+    border-radius: 20px;
+}
+.calendar-box{
+    height: 100%;
+    width: 58%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #f5eee6;
+}
+.clicked-date {
+    /* float: left; */
+    width: 42%;
+    height: 100%;    
+    background: #f3d7ca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 0px 0px 20px;
+}
+
+
+.right-side {
+    height:100%;
+    width: 100%;
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cyan;
+    
+}
+.calendar{
+    width: 100%;
+    height: 90%; 
+    background-color: #dba86f;
+} 
+.clicked-date .cal-day {
+    font-size: 24px;
+}
+.clicked-date .cal-date {
+    font-size: 130px;
+}
+
+.todo{
+    display: inline-block;
+}
+.todo-title{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0 0 10px 0;
+    text-align: left;
+}
+.input{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.input-box{
+    width: 70%;
+    margin-right: 10px;
+    height: auto; 
+    background: #f3d7ca;
+    color: #c86b85;
+    line-height : normal;
+    font-family: inherit;
+    border: 0; 
+    border-bottom: 1px dashed #c86b85;; 
+    border-radius: 0; 
+    outline-style: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none;
+}
+.input-button{
+    cursor: pointer;
+    font-size: 10px;
+    padding: 10px;
+    background: #c86b85;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+.input-button:hover{
+    background: #ba506e;
+    color: #FFFFFF;
+}
+.input-list > div{
+    font-size: 10px;
+    width: 60%;
+    float: left;
+    color: #c86b85;
+}
+.input-list > .checked{
+    color: #FFFFFF;
+    text-decoration:line-through
+}
+.del-data{
+    display: block;
+    color: #ddaf35;
+    float: left;
+    width: 10%;
+    cursor: pointer;
+    font-size: 10px;
+    padding: 10px;
+    background: #0b0809;
+    border: none;
+    border-radius: 10px;
+}
+
+.ctr-box {
+    padding: 0 16px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.ctr-box .btn-cal {
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 20%;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.ctr-box .btn-cal:after {
+    content: '<';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.ctr-box .btn-cal.next {
+    float: right;
+}
+.ctr-box .btn-cal.next:after {
+    content: '>';
+}
+
+.cal-table {
+    width: 100%;
+}
+.cal-table th {
+    width: 14.2857%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 900;
+}
+.cal-table td {
+    padding: 10px;
+    margin: 10px;
+    height: 50px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+.cal-table td.day {
+    position: relative;
+    cursor: pointer;
+}
+.cal-table td.today {
+    background: #ffd255;
+    border-radius: 50%;
+    color: #fff;
+}
+.cal-table td.day-active {
+    background: #ff8585;
+    border-radius: 50%;
+    color: #fff;
+}
+.cal-table td.has-event:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 4px;
+    background: #FFC107;
 }

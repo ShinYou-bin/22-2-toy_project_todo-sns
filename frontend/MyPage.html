@@ -12,14 +12,69 @@
 </head>
 <body>
     <nav class="navbar">
-        <ul class="menu">
+        <div class="menu">
             <li><a href="">My</a></li>
             <li><a href="">World</a></li>
-        </ul>
+        </div>
         <div class="logo">
-            <a href="">Logo</a>
+            <div>Logo</div>
         </div>
     </nav>
-    <script type="text/javascript" src="navbar.js"></script>
+    <aside>
+        <div class="aside-box">
+            <div class="pic"></div>
+            <div class="name">사용자1</div>
+            <div class="bar"></div>
+        </div>
+    </aside>
+    <main>
+        <div class="container">
+            <div class="my-calendar">
+              <div class="clicked-date">
+                <div class="left-side">
+                    <div class="cal-day"></div>
+                    <div class="cal-date"></div>
+                    <div class="todo">
+                        <div class="todo-title">Todo List</div>
+                        <div class="input">
+                            <input type="text" class="input-box">
+                            <button type="button" class="input-button">INPUT</button>
+                            <div class="input-list"></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="calendar-box">
+                <div class="right-side">
+                    <div class="calendar">
+                        <div class="ctr-box">
+                            <button type="button" title="prev" class="btn-cal prev">
+                            </button>
+                            <span class="cal-month"></span>
+                            <span class="cal-year"></span>
+                            <button type="button" title="next" class="btn-cal next">
+                            </button>
+                          </div>
+                          <table class="cal-table">
+                            <thead>
+                              <tr>
+                                  <th>Sun</th>
+                                  <th>Mon</th>
+                                  <th>Tue</th>
+                                  <th>Wed</th>
+                                  <th>Thu</th>
+                                  <th>Fri</th>
+                                  <th>Sat</th>
+                              </tr>
+                            </thead>
+                            <tbody class="cal-body"></tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="MyPage.js"></script>
 </body>
 </html>

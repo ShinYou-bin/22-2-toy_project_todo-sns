@@ -36,11 +36,11 @@
                     <div class="cal-date"></div>
                     <div class="todo">
                         <div class="todo-title">Todo List</div>
-                        <div class="input">
-                            <input type="text" class="input-box">
-                            <button type="button" class="input-button">INPUT</button>
-                            <div class="input-list"></div>
+                        <div class="input-wrap">
+                            <input type="text" id="input-box" class="input-box">
+                            <button type="button" id="input-button" class="input-button">INPUT</button>
                         </div>
+                        <div id="input-list" class="input-list"></div>
                     </div>
                 </div>
               </div>
@@ -48,14 +48,16 @@
                 <div class="right-side">
                     <div class="calendar">
                         <div class="ctr-box">
-                            <button type="button" title="prev" class="btn-cal prev">
+                            <button type="button" class="btn-cal prev">
+                                &#60;
                             </button>
                             <span class="cal-month"></span>
                             <span class="cal-year"></span>
-                            <button type="button" title="next" class="btn-cal next">
+                            <button type="button" class="btn-cal next">
+                                &#62;
                             </button>
-                          </div>
-                          <table class="cal-table">
+                        </div>
+                        <table class="cal-table">
                             <thead>
                               <tr>
                                   <th>Sun</th>
@@ -68,8 +70,7 @@
                               </tr>
                             </thead>
                             <tbody class="cal-body"></tbody>
-                          </table>
-                        </div>
+                        </table>
                     </div>
                 </div>
             </div>

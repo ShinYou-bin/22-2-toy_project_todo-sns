@@ -1,0 +1,57 @@
+:root{
+    --beige: #f5eee6;
+    --deepbeige: #dcc5ab;
+    --textbeige: #b49979;
+    --textdeepbeige: #897153;
+    --lightpink: #f3d7ca;
+    --pink: #e6a4b4;
+    --pinkhover:#db8a9e;
+    --deeppink: #c86b85;
+    --deeppinkhover: #c05d79;
+    --gray: #999999;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gowun Dodum', sans-serif;
+    min-height: 100% !important;
+    height: 100%;
+    box-sizing: border-box;
+}
+nav a{
+    text-decoration: none;
+    color: var(--deeppink);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--pink);
+}
+.logo{
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+    font-size: 40px;
+    color: var(--deeppink);
+}
+.menu{
+    display: flex; 
+    justify-content: space-around;
+    width: 70%;
+    list-style: none;
+    font-size: 30px;
+}
+.menu li{
+    padding: 8px 12px;
+    margin: 10px;
+    
+}
+.menu li:hover{
+    background-color: var(--pinkhover);
+    border-radius: 4px;
+}
+a:hover{
+    text-decoration: none;
+    color: var(--deeppinkhover);
+}

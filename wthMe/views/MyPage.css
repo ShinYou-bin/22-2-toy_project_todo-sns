@@ -34,6 +34,7 @@ nav a{
     width: 20%;
     font-size: 40px;
     color: var(--deeppink);
+    cursor: pointer;
 }
 .menu{
     display: flex; 
@@ -45,14 +46,21 @@ nav a{
 .menu li{
     padding: 8px 12px;
     margin: 10px;
-    
+    color: var(--deeppink);
+    cursor: pointer;    
 }
 .menu li:hover{
     background-color: var(--pinkhover);
     border-radius: 4px;
+    color: var(--deeppinkhover);
 }
 a:hover{
     text-decoration: none;
+    color: var(--deeppinkhover);
+}
+.menu .my{
+    background-color: var(--pinkhover);
+    border-radius: 4px;
     color: var(--deeppinkhover);
 }
 

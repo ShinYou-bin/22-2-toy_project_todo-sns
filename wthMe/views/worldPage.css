@@ -45,13 +45,72 @@ nav a{
 .menu li{
     padding: 8px 12px;
     margin: 10px;
-    
+    color: var(--deeppink);
 }
 .menu li:hover{
     background-color: var(--pinkhover);
     border-radius: 4px;
+    color: var(--deeppinkhover);
 }
 a:hover{
     text-decoration: none;
     color: var(--deeppinkhover);
+}
+.menu .world{
+    background-color: var(--pinkhover);
+    border-radius: 4px;
+    color: var(--deeppinkhover);
+}
+/* main */
+main{
+    height: 100%;
+}
+.container{
+    height: 100%;
+    margin: auto;
+    padding: 5%;
+}
+.user-box{
+    margin: 10px;
+    padding: 10px;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: var(--beige);
+}
+.inbox{
+    width: 100%;
+}
+.fa-solid{
+    margin-right: 10px;
+    position: relative;
+    float: left;
+    font-size: 90px;
+    text-align: center;
+    width: 10%;
+}
+.name{
+    font-size: 20px;
+}
+.barNumber{
+    /* display: flex; */
+    justify-content: right;
+    font-size: 10px;
+    padding: 5px 0px;
+}
+#progress {
+    width: 90%;
+    appearance: none;
+    float: right;
+}
+#progress::-webkit-progress-bar {
+    background:#eeeeee;
+}
+#progress::-webkit-progress-value {
+    background: var(--deepbeige);
+    background: -webkit-linear-gradient(to right, var(--beige), var(--deepbeige));
+    background: linear-gradient(to right, var(--pink), var(--deeppink));
+
 }

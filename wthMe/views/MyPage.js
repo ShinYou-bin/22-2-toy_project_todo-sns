@@ -1,6 +1,14 @@
-// ================================
-// START YOUR APP HERE
-// ================================
+//nav
+function moveMypage() {
+  location.href = "/my";
+}
+function moveWorldpage() {
+  location.href = "/world";
+}
+function moveMainpage() {
+  location.href = "/";
+}
+//main
 const init = {
   monList: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
   dayList: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
@@ -213,6 +221,9 @@ function addTodoList(){
     function deleteTodo(){
         $div.remove();
         $btn.remove();
+        dataCnt = dataCnt-1;
+        document.getElementById("todo-count").innerHTML=dataCnt-1;
+        document.getElementById("progress").max =dataCnt-1;
     }
    
     document.getElementById("todo-count").innerHTML=dataCnt-1;

@@ -1,8 +1,7 @@
-// 서버 사용을 위해 http모듈을 http라는 변수에 담는다.
-const http = require('http');
 const fs = require('fs');
 const express = require("express");
-const PORT = 3100;
+const todoList = require('./views/MyPage');
+const PORT = 3200;
 const app = express();
 
 app.use(express.static(__dirname + "/views"));
@@ -14,6 +13,7 @@ app.get("/", (req, res) => {
 
 app.get("/world", (req, res) => {
   res.sendFile(__dirname+"/views/worldPage.html")
+  console.log(todoList);
 })
 
 app.listen(PORT, () => {

@@ -47,9 +47,14 @@ const init = {
   
 };
 
-  const $calBody = document.querySelector('.cal-body');
-  const $btnNext = document.querySelector('.btn-cal.next');
-  const $btnPrev = document.querySelector('.btn-cal.prev');
+// const jsdom = require("jsdom");
+// const JSDOM = jsdom.JSDOM;
+// global.document = new JSDOM('/myPage').window.document;
+
+
+const $calBody = document.querySelector('.cal-body');
+const $btnNext = document.querySelector('.btn-cal.next');
+const $btnPrev = document.querySelector('.btn-cal.prev');
 
 
 
@@ -81,7 +86,7 @@ function loadYYMM (fullDate) {
 
 
 
-    document.querySelector('.cal-month').textContent = init.monList[mm];
+  document.querySelector('.cal-month').textContent = init.monList[mm];
   document.querySelector('.cal-year').textContent = yy;
 
 

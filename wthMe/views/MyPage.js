@@ -47,18 +47,23 @@ const init = {
   
 };
 
-const $calBody = document.querySelector('.cal-body');
-const $btnNext = document.querySelector('.btn-cal.next');
-const $btnPrev = document.querySelector('.btn-cal.prev');
+  const $calBody = document.querySelector('.cal-body');
+  const $btnNext = document.querySelector('.btn-cal.next');
+  const $btnPrev = document.querySelector('.btn-cal.prev');
+
+
+
 
 /**
  * @param {number} date
  * @param {number} dayIn
 */
-function loadDate (date, dayIn) {
-  document.querySelector('.cal-date').textContent = date;
-  document.querySelector('.cal-day').textContent = init.dayList[dayIn];
+
+  function loadDate (date, dayIn) {
+    document.querySelector('.cal-date').textContent = date;
+    document.querySelector('.cal-day').textContent = init.dayList[dayIn];
 }
+
 
 /**
  * @param {date} fullDate
@@ -74,9 +79,13 @@ function loadYYMM (fullDate) {
     markToday = init.today.getDate();
   }
 
-  document.querySelector('.cal-month').textContent = init.monList[mm];
+
+
+    document.querySelector('.cal-month').textContent = init.monList[mm];
   document.querySelector('.cal-year').textContent = yy;
 
+
+  
   let trtd = '';
   let startCount;
   let countDay = 0;
@@ -246,3 +255,5 @@ function moveBar(){
   document.getElementById("progress").value=checkedDataCnt;
   // document.getElementById("progress").max=dataCnt-1;
 }
+
+exports.todoList = init.todoList;

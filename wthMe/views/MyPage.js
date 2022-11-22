@@ -243,7 +243,7 @@ function addTodoList(){
     document.getElementById("todo-count").innerHTML=dataCnt-1;
     document.getElementById("progress").max =dataCnt-1;
         
-    // console.log(init.todoList);
+    console.log(init.todoList);
     // console.log(dataCnt-1);
     // console.log(checkedDataCnt);
 }
@@ -261,4 +261,4 @@ function moveBar(){
   // document.getElementById("progress").max=dataCnt-1;
 }
 
-exports.todoList = init.todoList;
+// exports.todoList = init.todoList;

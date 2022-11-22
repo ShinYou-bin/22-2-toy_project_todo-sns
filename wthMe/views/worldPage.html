@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0e6a63f057.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,22 +21,63 @@
             <li class="world" value="page move" onclick="moveWorldpage()">World</li>
         </div>
         <div class="logo">
-            <div value="page move" onclick="moveMainpage()">Logo</div>
+            <div value="page move" onclick="moveMainpage()">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <p class="logo-name">wthMe</p>
+            </div>
         </div>
     </nav>
     <main>
         <div class="container">
             <div class="user-box">
                 <div class="inbox">
-                    <i class="fa-solid fa-user pic"></i>
-                    <div class="name">사용자1</div>
-                    <div class="barNumber">
-                        00/00
-                        <!-- <p id="checked-count"></p>
-                        <p>/</p>
-                        <p id="todo-count"></p> -->
+                    <div class="left">
+                        <i class="fa-solid fa-user pic"></i>
                     </div>
-                    <progress id="progress" value="70" max="100"></progress>
+                    <div class="right">
+                        <div class="name">사용자1</div>
+                        <div class="barNumber">
+                         00/00
+                            <!-- <p id="checked-count"></p>
+                            <p>/</p>
+                            <p id="todo-count"></p> -->
+                        </div>
+                        <progress id="progress" value="70" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+            <div class="user-box">
+                <div class="inbox">
+                    <div class="left">
+                        <i class="fa-solid fa-user pic"></i>
+                    </div>
+                    <div class="right">
+                        <div class="name">사용자2</div>
+                        <div class="barNumber">
+                         00/00
+                            <!-- <p id="checked-count"></p>
+                            <p>/</p>
+                            <p id="todo-count"></p> -->
+                        </div>
+                        <progress id="progress" value="70" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+            <div class="user-box">
+                <div class="inbox">
+                    <div class="left">
+                        <i class="fa-solid fa-user pic"></i>
+                    </div>
+                    <div class="right">
+                        <div class="name">사용자3</div>
+                        <div class="barNumber">
+                         00/00
+                            <!-- <p id="checked-count"></p>
+                            <p>/</p>
+                            <p id="todo-count"></p> -->
+                        </div>
+                        <progress id="progress" value="70" max="100"></progress>
+                    </div>
                 </div>
             </div>
         </div>

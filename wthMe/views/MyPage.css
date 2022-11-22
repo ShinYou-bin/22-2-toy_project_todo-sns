@@ -18,6 +18,7 @@ html, body{
     height: 100%;
     box-sizing: border-box;
 }
+/* nav */
 nav a{
     text-decoration: none;
     color: var(--deeppink);
@@ -32,9 +33,19 @@ nav a{
     justify-content: center;
     text-align: center;
     width: 20%;
-    font-size: 40px;
+    height: 100%;
+    padding-top: 10px;
     color: var(--deeppink);
-    cursor: pointer;
+    /* background: blue; */
+}
+.fa-heart-pulse{
+    font-size: 60px;
+}
+.logo-name{
+    font-size: 20px;
+    margin: 0px;
+    font-family: 'Sono', sans-serif;
+    /* background: teal; */
 }
 .menu{
     display: flex; 
@@ -63,7 +74,7 @@ a:hover{
     border-radius: 4px;
     color: var(--deeppinkhover);
 }
-
+/* aside */
 aside{
     display: flex;
     padding: 30px;
@@ -116,7 +127,7 @@ aside{
     background: linear-gradient(to right, var(--pink), var(--deeppink));
 
 }
-
+/* main */
 main{
     height: 100%;
     display: flex;

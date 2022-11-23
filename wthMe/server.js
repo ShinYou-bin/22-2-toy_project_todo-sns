@@ -4,8 +4,6 @@ const express = require("express");
 const PORT = 3200;
 const app = express();
 
-const todoLists = [];
-
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
@@ -32,9 +30,13 @@ app.get("/my", (req, res) => {
   })
 })
 
+const keyValue = 220201;
+const todoLists = [];
+todoLists[keyValue] = [];
+
 app.post("/add_list", (req,res) => {
   const newContent = req.body.content
-  todoLists.push(newContent)
+  todoLists[keyValue].push(newContent)
   console.log(newContent+'추가')
   // res.redirect('/my')
   console.log(todoLists)

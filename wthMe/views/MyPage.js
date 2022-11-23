@@ -42,10 +42,11 @@ const init = {
   },
   //todo
   delText: 'X',
-  todoList:[]
+  todoList: getCache(),
 
-  
 };
+
+console.log({...init.todoList})
 
 // const jsdom = require("jsdom");
 // const JSDOM = jsdom.JSDOM;
@@ -143,6 +144,18 @@ $calBody.addEventListener('click', (e) => {
 });
 
 
+function getCache() {
+  const date = new Date()
+  var keyValue = date.getFullYear() + '' + (date.getMonth()+1)+ '' + date.getDate();
+  if (!localStorage.getItem(keyValue)) {
+    return {}
+  }
+  console.log(localStorage.getItem(keyValue))
+  return {
+    [keyValue]: [...JSON.parse(localStorage.getItem(keyValue))]
+  }
+}
+
 // todo
 function reshowingList(){
     var keyValue = target.getFullYear() + '' + (target.getMonth()+1)+ '' + target.getDate();
@@ -228,6 +241,9 @@ function addTodoList(){
     inputList.appendChild($div);
     inputList.appendChild($btn);
     init.todoList[keyValue].push(inputBox.value);
+    console.log('asd');
+    console.log(init.todoList);
+    localStorage.setItem(keyValue, JSON.stringify(init.todoList[keyValue]));
     dataCnt++;
     inputBox.value = '';
     $div.addEventListener('click',checkList);

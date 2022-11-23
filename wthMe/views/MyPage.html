@@ -48,16 +48,13 @@
                     <div class="cal-date"></div>
                     <div class="todo">
                         <div class="todo-title">Todo List</div>
-                        <div class="input-wrap">
-                            <form action="/add_list" method="post" id="frm">
-                                <input type="text" id="input-box" class="input-box" name="content" autocomplete="off">
-                                <button type="button" id="input-button" class="input-button" 
-                                onclick="document.getElementById('frm').submit();" value="전송">
-                                <a href="#" onclick="document.getElementById('frm').submit();"></a>INPUT</button>
-                            </form>
-                        </div>
+                        <form action="/add_list" method="post" id="frm" class="input-wrap">
+                            <input type="text" id="input-box" class="input-box" name="content" autocomplete="off">
+                            <button type="button" id="input-button" class="input-button" 
+                            onclick="document.getElementById('frm').submit();" value="전송">
+                            <a href="#" onclick="document.getElementById('frm').submit();"></a>INPUT</button>
+                        </form>
                         <div id="input-list" class="input-list"></div>
-                        <form action="/add_list" method="post">
                     </div>
                 </div>
               </div>

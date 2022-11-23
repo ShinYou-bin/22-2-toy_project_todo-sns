@@ -39,7 +39,7 @@ app.post("/add_list", (req,res) => {
   todoLists[keyValue].push(newContent)
   console.log(newContent+'추가')
   // res.redirect('/my')
-  console.log(todoLists)
+  // console.log(todoLists)
 })
 
 

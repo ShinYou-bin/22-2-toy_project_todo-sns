@@ -32,12 +32,11 @@ app.get("/my", (req, res) => {
 
 const keyValue = 220201;
 const todoLists = [];
-todoLists[keyValue] = [];
 
 app.post("/add_list", (req,res) => {
   const newContent = req.body.content
-  todoLists[keyValue].push(newContent)
-  console.log(newContent+'추가')
+  todoLists.push(newContent)
+  // console.log(newContent+'추가')
   // res.redirect('/my')
   // console.log(todoLists)
 })
